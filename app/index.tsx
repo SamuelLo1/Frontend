@@ -1,5 +1,6 @@
 'use client'
 import { Text, View, TextInput, TouchableOpacity } from "react-native";
+import CurrencySelector  from "@/components/currencyDropdown";
 import { useState } from "react";
 
 export default function Index() {
@@ -45,6 +46,7 @@ export default function Index() {
       > 
         <Text className="text-white text-xl font-bold">Check Worth!</Text>
       </TouchableOpacity>
+      <CurrencySelector />
     </View>
   );
 }
